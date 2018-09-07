@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Strike"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Strike_1"
+        android:layout_marginTop="217dp"
+        android:onClick="On_strike_click"
+        android:text="Strike"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <Button
+        android:id="@+id/Ball"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:layout_alignStart="@+id/Strike_1"
+        android:layout_below="@+id/Strike"
+        android:onClick="On_ball_click"
+        android:text="Ball"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/Strike_1"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="119dp"
+        android:text="Strike:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Strike_1"
+        android:layout_marginStart="115dp"
+        android:text="   Ball:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/Strike_output"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/Strike_1"
+        android:layout_toEndOf="@+id/Strike_1"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/Ball_output"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/Strike_1"
+        android:layout_toEndOf="@+id/Strike_1"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/Total_outs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Ball"
+        android:layout_marginStart="56dp"
+        android:text="Total Outs:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/Total_output"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/Total_outs"
+        android:layout_toEndOf="@+id/textView3"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+</RelativeLayout>

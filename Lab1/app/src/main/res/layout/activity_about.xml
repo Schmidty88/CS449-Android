@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="57dp"
+        android:text="In this app we are helping umpires record strikes and balls. It will also count total amount of outs"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="188dp"
+        android:layout_height="25dp"
+        android:text="App created by Tyler Schmidt"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+</android.support.constraint.ConstraintLayout>
