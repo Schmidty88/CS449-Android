@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Banking Assistant</string>
+    <string-array name="names">
+        <item>Select Your Purchase Category</item>
+        <item>Home</item>
+        <item>Transportation</item>
+        <item>Groceries</item>
+        <item>Personal</item>
+        <item>Restaurants</item>
+    </string-array>
+</resources>
