@@ -12,15 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends UpdateActivity {
 
-
-    TextView tv;
-    TextView tv2;
-    TextView tv3;
-    TextView tv4;
-
-    public static final String PREFS_NAME = "myPrefsFile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,19 +26,9 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
-        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+   //     updateTextViews();
 
     }
-    public void on_submit_click(View v){
-        tv = (TextView) findViewById(R.id.User);
-        tv2 = (TextView) findViewById(R.id.User2);
-        tv3 = (TextView) findViewById(R.id.Earnings);
-        tv4 = (TextView) findViewById(R.id.Goal);
-        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.commit();
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -67,4 +50,15 @@ public class MainActivity extends AppCompatActivity {
      }
         return super.onOptionsItemSelected(item);
     }
+
+//    public void updateTextViews(){
+//        String Keyname = settings.getString("Keyname", "default value");
+
+//      tv5 = (TextView) findViewById(R.id.Greetings);
+
+//        tv5.setText("Hello," + Keyname);
+//    }
+
+
+
 }
