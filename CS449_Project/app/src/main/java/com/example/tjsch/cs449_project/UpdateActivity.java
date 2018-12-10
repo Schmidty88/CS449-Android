@@ -20,7 +20,7 @@ public class UpdateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
-        settings = getPreferences(MODE_PRIVATE);
+        settings = getSharedPreferences("ID",0);
         tv = (TextView) findViewById(R.id.User);
         tv2 = (TextView) findViewById(R.id.User2);
         tv3 = (TextView) findViewById(R.id.Earnings);
@@ -44,7 +44,7 @@ public class UpdateActivity extends AppCompatActivity {
     }
 
     public void updateTextView(){
-        String Keyname = settings.getString("Keyname", "default value");
+        String Keyname = settings.getString("Keyname", "nameText");
 
         tv5 = (TextView) findViewById(R.id.Greetings1);
 
